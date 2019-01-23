@@ -1,0 +1,78 @@
+/* Style for the cards */
+
+.cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    margin: 6rem 0;
+}
+
+.card {
+    display: flex;
+    position: relative;
+
+    background-color: #4AD87F;
+    padding: 2rem;
+    /* height: 12rem; */
+}
+
+.card img {
+    object-fit: contain;
+}
+
+.card .game-image {
+    
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,.3))
+            drop-shadow(0px 0px 10px rgba(0,0,0,.3)); /* box-shadow does not work as intended in combination with object-fit. Using this instead. */
+    margin-right: 1.5rem;
+}
+
+/* Style for the content area beside the image, card */
+
+.card .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card .card-text .card-game-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.card .card-text .card-game-description {
+    color: #494947;
+    margin: 0.5rem 0;
+}
+
+.card .card-text .card-price {
+    display: flex;
+    align-items: center;
+
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.card .card-text .card-price img {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.card button.add-to-basket {
+    margin-top: auto;
+    height: 35px;
+    width: 50%;
+    z-index: 5;
+}
+
+/* Absolutly positioned controller image */
+
+.card .controller-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    pointer-events: none;
+}

@@ -1,0 +1,53 @@
+/* Page Styles */
+
+html, body {
+    margin: 0;
+    background-color: black;
+    min-height: 100vh;
+}
+button {
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.4);
+}
+button:hover:enabled {
+    background-color: rgba(0,0,0,0.75);
+}
+button:active:enabled {
+    background-color: rgba(0,0,0,0.65);
+    box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.4);
+}
+button:disabled {
+    color: rgba(255, 255, 255, 0.6);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+#main-container {
+    display: flex;
+    min-height: 100vh;
+}
+img, .image-unselectable-undraggable { /* Disable dragging and selecting images because clicks on images may register as drag and not click */
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* CSS Styles */
+
+#page .logo-img {
+    height: 50px;
+}
+
+.fade {
+    opacity: 0.6;
+}
+
+.main-content-area {
+    margin: 0 4%;
+}

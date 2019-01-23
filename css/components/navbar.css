@@ -1,0 +1,23 @@
+.nav-bar {
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 2rem;
+
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-bar div {
+    margin-right: 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar img {
+    margin-right: 0.5rem;
+    height: 20px;
+}
